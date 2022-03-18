@@ -1,0 +1,43 @@
+###
+POST http://localhost:3000/api/wilders HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Jane",
+    "city": "Londres",
+    "description":"Lorem lipsum",
+    "skills":[
+        {"title":"angular", "votes":5},
+        {"title":"php", "votes":12}
+    ]
+}
+
+###
+GET http://127.0.0.1:3000/api/wilders
+
+###
+GET http://127.0.0.1:3000/api/wilders/6227ad5dc5fd45b22a05b26d
+
+
+###
+PUT http://127.0.0.1:3000/api/wilders/6227ad5dc5fd45b22a05b26d 
+content-type: application/json
+
+{
+    "city": "Saint-Etienne"
+}
+
+
+###
+DELETE  http://127.0.0.1:3000/api/wilders/6227b186fd76050a181215b6
+
+
+//test route fantome
+
+###
+GET http://127.0.0.1:3000/api/project
+
+
+
+
+
